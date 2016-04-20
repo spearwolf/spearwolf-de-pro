@@ -1,0 +1,106 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+}
+main {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+body {
+    background-color: #fff;
+    background-image: url(images/ricepaper-reduced-light.png);
+    background-repeat: repeat;
+    font-size: 16px;
+}
+.container img {
+    width: 100%;
+    max-width: 100%;
+}
+.container {
+    padding: 0 10px 0 10px;
+    max-width: 413px;
+
+    &.info-container {
+        max-width: 28rem;
+    }
+}
+.container:first-child {
+    margin-top: 30px;
+}
+.teaser-image {
+    margin-top: 20px;
+}
+
+@mixin page-font($color: #204060) {
+    font-family: 'Roboto Condensed', sans-serif;
+    color: $color;
+}
+
+.info {
+
+    @include page-font;
+    font-weight: 400;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    &--headline {
+        font-size: 2.9rem;
+        line-height: 3.3rem;
+    }
+
+    &--subtitle {
+        font-size: 1.7rem;
+        line-height: 2.3rem;
+    }
+
+    &--text {
+        font-size: 1rem;
+        line-height: 1.7rem;
+    }
+
+}
+
+.social-container {
+
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    dt, dd, a {
+        @include page-font;
+        font-size: 1.2rem;
+    }
+
+    a {
+        font-weight: 400;
+    }
+
+    dl {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    dt, dd {
+        display: inline-block;
+        margin-top: 0.5rem;
+    }
+
+    dt {
+        font-weight: 700;
+        padding-right: 0.5rem;
+        text-align: right;
+        width: 37%;
+    }
+    dd {
+        font-weight: 400;
+        width: 60%;
+    }
+
+}
+

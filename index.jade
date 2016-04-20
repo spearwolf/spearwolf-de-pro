@@ -1,0 +1,51 @@
+doctype html
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width,initial-scale=1.0")
+    meta(name="author" content="Wolfger Schramm <wolfger@spearwolf.de>")
+    title spearwolf.de / wolfger schramm / freelance front-end developer
+    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css")
+    style
+        include .tmp/index.css
+  body
+
+    main
+      .logo-container.container
+        img.logo-image(src="images/spw-pro-design.png" srcset="images/spw-pro-design.png 1x, images/spw-pro-design@2x.png 2x" alt="spearwolf")
+
+      .info-container.container
+        .info.info--headline
+            | Wolfger Schramm
+        .info.info--subtitle
+            | freelance front-end developer
+        .info.info--text
+            | javascript &#8226; angular &#8226; html5 &#8226; node.js &#8226; webgl &#8226; ux &#8226; hybrid mobile apps &#8226; responsive design &#8226; gamedev
+
+      .teaser-container.container
+        img.teaser-image(src="images/spw-oktopus.png" srcset="images/spw-oktopus.png 1x, images/spw-oktopus@2x.png 2x" alt="oktopus (red)")
+
+      .social-container.container
+        dl
+          dt.social-label.social-label--xing xing
+          dd
+            a(href="https://www.xing.com/profile/Wolfger_Schramm" target="blank")
+              | Wolfger Schramm
+          dt.social-label.social-label--github github
+          dd
+            a(href="https://github.com/spearwolf/" target="blank")
+              | github.com/spearwolf
+          dt.social-label.social-label--instagram instagram
+          dd
+            a(href="https://instagram.com/spearwolf/" target="blank")
+              | instagram.com/spearwolf
+          dt.social-label.social-label--email email
+          dd
+            a(href="mailto:wolfger@spearwolf.de" target="blank")
+              | wolfger@spearwolf.de
+          dt.social-label.social-label--phone phone
+          dd +49 151 41 939 413
+
+
+    script(src="spearwolf.js")
+
