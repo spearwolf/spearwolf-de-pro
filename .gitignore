@@ -1,5 +1,6 @@
 .DS_Store
+.backup
 .tmp
 build
+index.html
 node_modules
-.backup

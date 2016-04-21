@@ -18,7 +18,7 @@
     "release": "npm run clean && npm run build:static && npm run webpack:release",
     "watch": "./node_modules/watch/cli.js 'npm run build:static' . --filter=watch.js --ignoreDotFiles --ignoreUnreadable",
     "start": "npm build:static && webpack-dev-server --inline --progress --colors",
-    "clean": "rm -fr build .tmp"
+    "clean": "rm -fr build .tmp index.html"
   },
   "babel": {
     "presets": [
