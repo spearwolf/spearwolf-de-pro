@@ -9,15 +9,15 @@
     "url": "http://spearwolf.de"
   },
   "scripts": {
-    "build:webpack": "webpack --progress --colors",
-    "build:webpack:release": "BUILD_DEV=0 webpack --progress --colors",
+    "webpack": "webpack --progress --colors",
+    "webpack:release": "BUILD_DEV=0 webpack --progress --colors",
     "build:css": "mkdir -p .tmp && ./node_modules/node-sass/bin/node-sass index.scss --output-style compressed --include-path ./ --output .tmp/",
     "build:html": "./node_modules/jade/bin/jade.js index.jade --out ./ --path ./",
-    "build:css:html": "npm run build:css && npm run build:html",
-    "build": "npm run build:webpack && npm run build:css && npm run build:html",
-    "release": "npm run clean && npm run build:webpack:release && npm run build:css && npm run build:html",
-    "watch": "./node_modules/watch/cli.js 'npm run build:css:html' . --filter=watch.js --ignoreDotFiles --ignoreUnreadable",
-    "start": "webpack-dev-server --inline --progress --colors",
+    "build:static": "npm run build:css && npm run build:html",
+    "build": "npm run build:static && npm run webpack",
+    "release": "npm run clean && npm run build:static && npm run webpack:release",
+    "watch": "./node_modules/watch/cli.js 'npm run build:static' . --filter=watch.js --ignoreDotFiles --ignoreUnreadable",
+    "start": "npm build:static && webpack-dev-server --inline --progress --colors",
     "clean": "rm -fr build .tmp"
   },
   "babel": {
