@@ -1,0 +1,15 @@
+{
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "url": "http://spearwolf.de",
+    "name": "Wolfger Schramm",
+    "brand": "spearwolf",
+    "email": "mailto:wolfger@spearwolf.de",
+    "sameAs" : [
+        "https://www.xing.com/profile/Wolfger_Schramm",
+        "https://github.com/spearwolf/",
+        "https://instagram.com/spearwolf/",
+        "https://twitter.com/spearwolf",
+        "https://de.linkedin.com/in/wolfger-schramm-910669"
+    ]
+}

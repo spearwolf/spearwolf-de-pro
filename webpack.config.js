@@ -18,6 +18,7 @@ var plugins = [
     new CopyWebpackPlugin([
         { from: 'images', to: 'images' },
         { from: 'favicon.ico' },
+        { from: 'sitemap.xml' },
         { from: 'index.html' },
     ]),
     new webpack.BannerPlugin(BANNER, {
