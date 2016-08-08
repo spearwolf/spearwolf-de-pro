@@ -2,7 +2,7 @@
     "@context" : "http://schema.org",
     "@type" : "WebSite",
     "name" : "spearwolf",
-    "url" : "http://spearwolf.de",
-    "image": "http://spearwolf.de/images/spw-oktopus.png",
+    "url" : "https://spearwolf.de",
+    "image": "https://spearwolf.de/images/spw-oktopus.png",
     "keywords": "spearwolf,wolfger,schramm,javascript,angular,angular2,react,node,nodejs,node.js,html5,css3,html,css,webgl,picimo,three,three.js,cesium,gamedev,freelance,frontend,front-end,mobile,apps,hybrid,responsive,programmer,developer,lead,mastermind,berlin,indie,hire,artist,digital"
 }

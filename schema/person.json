@@ -1,7 +1,7 @@
 {
     "@context": "http://schema.org",
     "@type": "Person",
-    "url": "http://spearwolf.de",
+    "url": "https://spearwolf.de",
     "name": "Wolfger Schramm",
     "brand": "spearwolf",
     "email": "mailto:wolfger@spearwolf.de",

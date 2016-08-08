@@ -1,6 +1,6 @@
 {
   "name": "spearwolf-de-pro",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "the fantastic homepage of spearwolf",
   "license": "MIT",
   "author": {
@@ -10,7 +10,7 @@
   },
   "scripts": {
     "webpack": "webpack --progress --colors",
-    "webpack:release": "BUILD_DEV=0 webpack --progress --colors",
+    "webpack:release": "BUILD_DEV=0 webpack",
     "build:css": "mkdir -p .tmp && ./node_modules/node-sass/bin/node-sass index.scss --output-style compressed --include-path ./ --output .tmp/",
     "build:html": "./node_modules/jade/bin/jade.js index.jade --out ./ --path ./",
     "build:static": "npm run build:css && npm run build:html",
@@ -19,7 +19,7 @@
     "watch": "./node_modules/watch/cli.js 'npm run build:static' . --filter=watch.js --ignoreDotFiles --ignoreUnreadable",
     "start": "npm run build:static && webpack-dev-server --inline --progress --colors",
     "clean": "rm -fr build .tmp index.html",
-    "sitemap": "./node_modules/sitemap-generator-cli/cli.js http://spearwolf.de"
+    "sitemap": "./node_modules/sitemap-generator-cli/cli.js https://spearwolf.de"
   },
   "babel": {
     "presets": [
