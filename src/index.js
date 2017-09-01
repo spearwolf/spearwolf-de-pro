@@ -2,5 +2,6 @@
 /* global __PACKAGE_VERSION__ */
 'use strict';
 
-console.log(__PACKAGE_NAME__, __PACKAGE_VERSION__);
-
+if (typeof window.console !== 'undefined') {
+  console.log('spearwolf/' + __PACKAGE_NAME__, __PACKAGE_VERSION__);
+}
