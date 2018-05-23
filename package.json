@@ -1,6 +1,6 @@
 {
   "name": "spearwolf-de-pro",
-  "version": "0.0.666",
+  "version": "0.1.0",
   "description": "the fantastic homepage of spearwolf",
   "license": "MIT",
   "author": {
@@ -13,7 +13,7 @@
     "webpack:release": "BUILD_DEV=0 webpack",
     "build:css": "mkdir -p .tmp && ./node_modules/node-sass/bin/node-sass index.scss --output-style compressed --include-path ./ --output .tmp/",
     "build:html": "./node_modules/jade/bin/jade.js index.jade --out ./ --path ./",
-    "build:static": "npm run build:css && npm run build:html",
+    "build:static": "npm run build:css && npm run build:html && cp -r fonts build/fonts",
     "build": "npm run build:static && npm run webpack",
     "release": "npm run clean && npm run build:static && npm run webpack:release",
     "watch": "./node_modules/watch/cli.js 'npm run build:static' . --filter=watch.js --ignoreDotFiles --ignoreUnreadable",

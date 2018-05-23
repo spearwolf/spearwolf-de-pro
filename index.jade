@@ -5,11 +5,12 @@ html
     meta(name="viewport" content="width=device-width,initial-scale=1.0")
     meta(name="author" content="Wolfger Schramm <wolfger@spearwolf.de>")
     title spearwolf.de / wolfger schramm / freelance front-end developer
-    link(href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet" type="text/css")
     script(type="application/ld+json")
         include schema/person.json
     script(type="application/ld+json")
         include schema/website.json
+    style
+        include ./fonts.css
     style
         include .tmp/index.css
   body
@@ -40,9 +41,6 @@ html
             a(href="https://github.com/spearwolf/" target="blank")
               | github.com/spearwolf
           dt.social-label.social-label--instagram instagram
-          dd
-            a(href="https://instagram.com/spearwolf/" target="blank")
-              | instagram.com/spearwolf
           dt.social-label.social-label--email email
           dd
             a(href="mailto:wolfger@spearwolf.de" target="blank")
@@ -52,6 +50,4 @@ html
 
 
     script(src="spearwolf.js")
-    script
-        include ./ga.js
 
